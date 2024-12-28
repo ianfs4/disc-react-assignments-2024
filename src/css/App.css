@@ -1,0 +1,55 @@
+:root {
+  --purple: #4E2A84;
+  --purple-80: #765da0;
+  --title-color: #fff;
+  --text-color: #f2f2f2;
+  --text-color-inverse: #000;
+  --background-color: #333;
+  --hover-background-color: #ddd;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.title {
+  background-color: var(--purple-80);
+  color: var(--title-color);
+  margin: 0;
+  padding: 14px 16px;
+}
+
+.title-link {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  grid: auto / auto auto auto;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: var(--text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: var(--hover-background-color);
+  color: var(--text-color-inverse);
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: var(--purple);
+  color: var(--title-color);
+}
